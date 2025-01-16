@@ -106,18 +106,7 @@ async function getPairingCode(phone) {
 			const logger = pino({ level: 'silent' });
 			const { state, saveCreds } = await baileys.useMultiFileAuthState('session');
 			const { version } = await baileys.fetchLatestBaileysVersion();
-			const quoted = {
-				key: {
-					fromMe: false,
-					participant: '0@s.whatsapp.net',
-					remoteJid: '0@s.whatsapp.net'
-				},
-				message: {
-					extendedTextMessage: {
-						text: 'POWERED BY H4KI XER'
-					}
-				}
-			};
+			const quoted = "POWERED BY H4KI XER";
 			const buffer = await fetch('https://files.catbox.moe/lt53tx.jpg')
 				.then(res => res.arrayBuffer())
 				.then(Buffer.from);
