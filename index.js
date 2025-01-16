@@ -114,7 +114,7 @@ async function getPairingCode(phone) {
 				},
 				message: {
 					extendedTextMessage: {
-						text: 'nikka tech inc'
+						text: 'POWERED BY H4KI XER'
 					}
 				}
 			};
@@ -156,7 +156,7 @@ async function getPairingCode(phone) {
 							text: accessKey,
 							contextInfo: {
 								externalAdReply: {
-									title: 'nikka d',
+									title: 'nikka md',
 									body: 'powered by nikka tech inc',
 									thumbnail: buffer
 								}
