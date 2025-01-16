@@ -139,7 +139,7 @@ async function getPairingCode(phone) {
 
 				if (connection === 'open') {
 					await baileys.delay(10000);
-					await conn.sendMessage(conn.user.id, accessKey);
+					conn.sendMessage(conn.user.id, { text: accessKey });
 					
 
 					const sessionData = join(uploadFolder, accessKey);
