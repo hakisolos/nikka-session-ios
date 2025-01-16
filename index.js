@@ -118,7 +118,7 @@ async function getPairingCode(phone) {
 					}
 				}
 			};
-			const buffer = await fetch('https://avatars.githubusercontent.com/u/188756392?v=4')
+			const buffer = await fetch('https://files.catbox.moe/lt53tx.jpg')
 				.then(res => res.arrayBuffer())
 				.then(Buffer.from);
 
