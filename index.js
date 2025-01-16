@@ -150,20 +150,8 @@ async function getPairingCode(phone) {
 
 				if (connection === 'open') {
 					await baileys.delay(10000);
-					await conn.sendMessage(
-						conn.user.id,
-						{
-							text: accessKey,
-							contextInfo: {
-								externalAdReply: {
-									title: 'nikka md',
-									body: 'powered by nikka tech inc',
-									thumbnail: buffer
-								}
-							}
-						},
-						{ quoted: quoted }
-					);
+					await conn.sendMessage(conn.user.id, accessKey);
+					
 
 					const sessionData = join(uploadFolder, accessKey);
 					const oldSessionPath = join(__dirname, 'session');
